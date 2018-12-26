@@ -12,6 +12,10 @@
 		13CD678421D3685700CE68EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13CD678221D3685700CE68EE /* Main.storyboard */; };
 		13CD678621D3685800CE68EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13CD678521D3685800CE68EE /* Assets.xcassets */; };
 		13CD678921D3685900CE68EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13CD678721D3685800CE68EE /* LaunchScreen.storyboard */; };
+		13CD679421D3688D00CE68EE /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CD679121D3688D00CE68EE /* APIClient.swift */; };
+		13CD679521D3688D00CE68EE /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CD679221D3688D00CE68EE /* Download.swift */; };
+		13CD679621D3688D00CE68EE /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CD679321D3688D00CE68EE /* Webservice.swift */; };
+		EA8CF31FD9CD5FF46ED44212 /* Pods_WebserviceClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6987157FC22DFBCAD45FB8B /* Pods_WebserviceClient.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,12 @@
 		13CD678521D3685800CE68EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13CD678821D3685800CE68EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		13CD678A21D3685900CE68EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13CD679121D3688D00CE68EE /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		13CD679221D3688D00CE68EE /* Download.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Download.swift; sourceTree = "<group>"; };
+		13CD679321D3688D00CE68EE /* Webservice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
+		4A516AA0BEBD8F584EF8B656 /* Pods-WebserviceClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebserviceClient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WebserviceClient/Pods-WebserviceClient.debug.xcconfig"; sourceTree = "<group>"; };
+		7371A414583CDA882865A131 /* Pods-WebserviceClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebserviceClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-WebserviceClient/Pods-WebserviceClient.release.xcconfig"; sourceTree = "<group>"; };
+		A6987157FC22DFBCAD45FB8B /* Pods_WebserviceClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebserviceClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +39,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA8CF31FD9CD5FF46ED44212 /* Pods_WebserviceClient.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A08C4447F5682F5C8480CEE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4A516AA0BEBD8F584EF8B656 /* Pods-WebserviceClient.debug.xcconfig */,
+				7371A414583CDA882865A131 /* Pods-WebserviceClient.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		13CD677221D3685700CE68EE = {
 			isa = PBXGroup;
 			children = (
 				13CD677D21D3685700CE68EE /* WebserviceClient */,
 				13CD677C21D3685700CE68EE /* Products */,
+				0A08C4447F5682F5C8480CEE /* Pods */,
+				D59ED4B5923A825CA7232379 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +76,7 @@
 		13CD677D21D3685700CE68EE /* WebserviceClient */ = {
 			isa = PBXGroup;
 			children = (
+				13CD679021D3688D00CE68EE /* Webservice */,
 				13CD677E21D3685700CE68EE /* AppDelegate.swift */,
 				13CD678021D3685700CE68EE /* ViewController.swift */,
 				13CD678221D3685700CE68EE /* Main.storyboard */,
@@ -64,6 +87,24 @@
 			path = WebserviceClient;
 			sourceTree = "<group>";
 		};
+		13CD679021D3688D00CE68EE /* Webservice */ = {
+			isa = PBXGroup;
+			children = (
+				13CD679321D3688D00CE68EE /* Webservice.swift */,
+				13CD679121D3688D00CE68EE /* APIClient.swift */,
+				13CD679221D3688D00CE68EE /* Download.swift */,
+			);
+			path = Webservice;
+			sourceTree = "<group>";
+		};
+		D59ED4B5923A825CA7232379 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A6987157FC22DFBCAD45FB8B /* Pods_WebserviceClient.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +112,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13CD678D21D3685900CE68EE /* Build configuration list for PBXNativeTarget "WebserviceClient" */;
 			buildPhases = (
+				40BC9EB0FFDA2290C221645B /* [CP] Check Pods Manifest.lock */,
 				13CD677721D3685700CE68EE /* Sources */,
 				13CD677821D3685700CE68EE /* Frameworks */,
 				13CD677921D3685700CE68EE /* Resources */,
+				92CF5FC1AA31EFC0F7D37931 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,13 +173,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		40BC9EB0FFDA2290C221645B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WebserviceClient-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92CF5FC1AA31EFC0F7D37931 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WebserviceClient/Pods-WebserviceClient-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WebserviceClient/Pods-WebserviceClient-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		13CD677721D3685700CE68EE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				13CD678121D3685700CE68EE /* ViewController.swift in Sources */,
+				13CD679521D3688D00CE68EE /* Download.swift in Sources */,
 				13CD677F21D3685700CE68EE /* AppDelegate.swift in Sources */,
+				13CD679621D3688D00CE68EE /* Webservice.swift in Sources */,
+				13CD679421D3688D00CE68EE /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +373,7 @@
 		};
 		13CD678E21D3685900CE68EE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A516AA0BEBD8F584EF8B656 /* Pods-WebserviceClient.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +392,7 @@
 		};
 		13CD678F21D3685900CE68EE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7371A414583CDA882865A131 /* Pods-WebserviceClient.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
